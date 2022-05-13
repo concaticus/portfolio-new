@@ -1,7 +1,7 @@
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     list-style: none;
 }
 
@@ -19,13 +19,14 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 body {
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
-    color: var(--color-white); //all the text is white//
+    color: var(--color-white);
     transition: all .4s ease-in-out;
 }
 
@@ -35,6 +36,7 @@ header {
     color: var(--color-white);
     overflow: hidden;
     padding: 0 !important;
+}
 
 // targeting the links
 a {
@@ -45,7 +47,7 @@ a {
 }
 
 section {
-    min-height:  100vh;
+    min-height: 100vh;
     width: 100%;
     position: absolute;
     left: 0;
@@ -54,8 +56,9 @@ section {
 }
 
 .section {
+    display: none;
     transform: translateY(-100%) scale(0); //want it to be offscreen by default
-    transition: all 4.s ease-in-out;
+    transition: all .4s ease-in-out;
     background-color: var(--color-primary);
 }
 
@@ -78,4 +81,31 @@ section {
 .sect5 {
     display: none;
     transform: translateY(0) scale(1); 
+}
+
+// controls: we want them fixed & on the right hand side
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%; //3% of space from the right side
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+    .control {
+        padding: 1rem; // spacing around it
+        cursor: pointer;
+        background-color: var(--color-grey-4);
+        //make them rounded
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex; //center items
+        align-items: center;
+        justify-content: center;
+        margin: .7rem 0;
+        box-sizing: var(--box-shadow-1);
+    }
 }
