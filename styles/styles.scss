@@ -84,6 +84,7 @@ section {
 }
 
 // controls: we want them fixed & on the right hand side
+//SASS allows us to nest inside the elements
 .controls {
     position: fixed;
     z-index: 10;
@@ -94,6 +95,15 @@ section {
     transform: translateY(-50%);
     align-items: center;
     justify-content: center;
+    //styling active buttons:background colour & transition
+    .active-btn {
+        background-color: var(--color-secondary) !important;
+        transition: all 0.4s ease-in-out;
+        //targetting the icon
+        i {
+            color: var(--color-white) !important;
+        }
+    }
     .control {
         padding: 1rem; // spacing around it
         cursor: pointer;
@@ -101,11 +111,17 @@ section {
         //make them rounded
         width: 55px;
         height: 55px;
-        border-radius: 50%;
+        border-radius: 50%; //rounded//
         display: flex; //center items
         align-items: center;
         justify-content: center;
         margin: .7rem 0;
         box-sizing: var(--box-shadow-1);
+        //target icon sizing:
+        i {
+            font-size: 1.2rem;
+            color: var(--color-grey-2);
+            pointer-events: none; // no reaction to mouse 
+        }
     }
 }
