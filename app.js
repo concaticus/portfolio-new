@@ -15,7 +15,7 @@ const allSections = document.querySelectorAll('.main-content')
 function PageTransitions() {
     //button click active class: want to remove class that is not active
     for(let i = 0; i < sectBtn.length; i++) {
-        sectBtn[i] = .addEventListener('click', () => {
+        sectBtn[i] = .addEventListener('click', function(){ //need to use function because 'this' doesn't exist w/ arrow funcs
             let currentBtn = document.querySelectorAll('.active-btn');
                 currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
                 this.className += ' active-btn';
