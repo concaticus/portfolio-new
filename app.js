@@ -10,7 +10,6 @@ const sectBtn = document.querySelectorAll('.control'); // actual button
 // select body as a class of main content 
 const allSections = document.querySelectorAll('.main-content')
 
-
 // function: min 27 onwards: review
 function PageTransitions() {
     //button click active class: want to remove class that is not active

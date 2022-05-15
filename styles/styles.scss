@@ -87,7 +87,7 @@ section {
 //SASS allows us to nest inside the elements
 .controls {
     position: fixed;
-    z-index: 10;
+    z-index: 10; //want it always to be on the top
     top: 50%;
     right: 3%; //3% of space from the right side
     display: flex;
@@ -95,11 +95,12 @@ section {
     transform: translateY(-50%);
     align-items: center;
     justify-content: center;
+     
     //styling active buttons:background colour & transition
     .active-btn {
         background-color: var(--color-secondary) !important;
         transition: all 0.4s ease-in-out;
-        //targetting the icon
+        //targeting the icon
         i {
             color: var(--color-white) !important;
         }
@@ -116,8 +117,8 @@ section {
         align-items: center;
         justify-content: center;
         margin: .7rem 0;
-        box-sizing: var(--box-shadow-1);
-        //target icon sizing:
+        box-shadow: var(--box-shadow-1);
+        //target icon sizing: nesting the elements w/ sass
         i {
             font-size: 1.2rem;
             color: var(--color-grey-2);
