@@ -10,9 +10,11 @@ This portfolio was made utilising the following technologies:
 - **Git & GitHub**
 - **Netlify**
 
-In doing so, I followed and modelled this site off the [following tutorial](https://youtu.be/xV7S8BhIeBo) from FreeCodeCamp's YouTube page
+In doing so, I followed and modelled this site off the [following tutorial](https://youtu.be/xV7S8BhIeBo) from FreeCodeCamp's YouTube page. An attempt was made to initially mirror the existing code base, following the tutorial's lead. After working through the tutorial, greater liberty was taken to expand beyond what was covered...
 
 ### Functionality
+
+- add notes for functionality
 
 ### Optimisations
 
@@ -21,6 +23,5 @@ In doing so, I followed and modelled this site off the [following tutorial](http
 
 ### Lessons Learned
 
-- ...
 - ...
 - This was an important opportunity to revisit some lost familiarity with CSS & SASS, though I feel the implemention of JavaScript was minimal. I discussed above in Optimisations where I feel improvements could be made in order to use JS to improve the functionality of the site.
