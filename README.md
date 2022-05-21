@@ -2,13 +2,17 @@
 
 ### Intent & How it's made
 
-This portfolio was made utilising the following technologies:
+The intent and purpose of this portfolio is to showcase
+
+the intent and purpose behind this website was to build functional site, employing working knowledge of several important technologies, in order to design an online presence for myself as a future developer. Consquently, this portfolio was made utilising the following technologies:
 
 - **HTML5**
 - **SASS**
 - **JavaScript**
 - **Git & GitHub**
 - **Netlify**
+
+Further more, this site will be worked on, improved, and returned too over again in order to also serve as a repository for completed & future projects. My hope is that this will also illustrate my passions, interests, but importantly, my tech related work and skills.
 
 In doing so, I followed and modelled this site off the [following tutorial](https://youtu.be/xV7S8BhIeBo) from FreeCodeCamp's YouTube page. An attempt was made to initially mirror the existing code base, following the tutorial's lead. After working through the tutorial, greater liberty was taken to expand beyond what was covered, and the following features were subsequently added to the site:
 
